@@ -1,0 +1,22 @@
+:root{
+  color: #792426;
+  color: #CF3337;
+  color: #EF7A7D;
+  color: #2B2A29;
+  color: #514F4D;
+  color: #8B8785;
+  color: #FFFFFF;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(background.png);
+  margin-top: 80px;
+  margin-left: 80px;
+}
