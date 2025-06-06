@@ -1,5 +1,5 @@
 <template>
-    <div className="main">
+    <div class="main">
         <img src="/src/assets/photo.png" alt="">
     </div>
 </template>

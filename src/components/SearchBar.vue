@@ -1,13 +1,13 @@
 <template>
-    <div className="container">
-        <button className="searce"><img src="/src/components/icons/lens white.svg">Поиск героя</button>
-        <button className="filter"><img src="/src/components/icons/favourites.svg">Фильтр</button>
+    <div class="container">
+        <router-link to="/Search"><button class="search"><img src="/src/components/icons/lens white.svg">Поиск героя</button></router-link>
+        <button class="filter"><img src="/src/components/icons/favourites.svg">Фильтр</button>
         <h2>СТЕНА ПАМЯТИ</h2>
     </div>
     
 </template>
 
-<script >
+<script>
 
 </script>
 
@@ -18,13 +18,14 @@
         align-items: center;
     }
 
-    .searce{
+    .search{
         height: 69px;
         width: 280px;
         background-color: #CF3337;
-        color: #FFFFFF;
         font-size: 18px;
         border: 0;
+        text-decoration: none;
+        color: #FFFFFF;
     }
 
     .filter{
@@ -42,16 +43,17 @@
         justify-content: center;
         cursor: pointer;
         text-transform: uppercase;
+        text-decoration: none;
     }
 
-    .searce img{
-        height: 26.73px;
-        width: 26.73px;
+    .search img{
+        height: 25px;
+        width: 25px;
         margin-right: 15px;
     }
 
     .filter img{
-        height: 25.5px;
+        height: 25px;
         width: 27px;
         margin-right: 15px;
     }

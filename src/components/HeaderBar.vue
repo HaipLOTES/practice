@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="{ 'header-font-color': another }">
         <img src="/src/assets/logo.png" alt="">
         <div>
             <h1>Музей Боевой и Трудовой Славы </h1>
@@ -9,7 +9,14 @@
 </template>
 
 <script>
-
+    export default {
+    props: {
+        another: {
+            type: Boolean,
+            default: false
+            }
+        }
+    }
 </script>
 
 <style scoped>
@@ -18,7 +25,7 @@
     }
 
     img{
-        width: 86.44px;
+        width: 86px;
         height: 180px;
         margin-right: 40px;
         position: relative;
@@ -33,5 +40,13 @@
     h2{
         color: #514F4D;
         font-size: 58px;
+    }
+
+    .header-font-color h1 {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .header-font-color h2 {
+        color: rgba(211, 211, 211, 1);
     }
 </style>
